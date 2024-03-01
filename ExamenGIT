@@ -1,3 +1,16 @@
 Contesta la pregunta y realiza un commit a la rama correspondiente a la pregunta (examenA o examenB).
 
 PREGUNTA B - Explica los cuatro "lugares" donde pueden encontrarse los archivos que forman parte de un repositorio GIT. Nombra el comando para mover un archivo de un espacio a otro con la siguiente sintaxys: [LugarInicial - LugarFinal => comando]
+--------------------------------------------------------------------------------------------
+-Area de trabajo local: es el ahora de trabajo en la que el usuario modifica y realizar sus cambios a los archivos, la que luego pasara por el stage
+-Area Stage (preparación): es el area donde se preparan todos los archivos para realizar los commits y subirlo al repositorio local.
+-Area repositorio Local: es el trabajo final del repositorio, los archivo modificados se almacenan en el. Este repositorio se podra mover a otras areas de git o podra subir su repositoria al remoto
+-Area repositorio remoto:Repositorio creado por Git hub el cual funcionara de manera parecida a un repositorio local. 
+COMANDOS 
+git commit -a -m "mensaje" -> del area de trabajao al repositorio local
+git add <nombre.extension> -> stage al repositorio local
+git push -u -> repositorio local al remoto 
+git pull -u -> repositorio remoto al local
+git clone <nombre del repositorio remoto> -> machaca tu repositorio local con los archivos del remoto
+git restore <archivo> -> del repositorio local machaca al contenido del area de trabajo inicial
+git restore --stage : saca al archivo a del stage a el area de trabajo volviendo a su estado antes del git add
