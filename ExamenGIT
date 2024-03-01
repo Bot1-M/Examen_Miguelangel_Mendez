@@ -1,136 +1,24 @@
-Este es el commit del main que deberá ser sustituidos por las versiones futuras, elimina esto cuando surjan conflictos con el examen A y el examen B. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Contesta la pregunta y realiza un commit a la rama correspondiente a la pregunta (examenA o examenB).
+
+PREGUNTA B - Explica los cuatro "lugares" donde pueden encontrarse los archivos que forman parte de un repositorio GIT. Nombra el comando para mover un archivo de un espacio a otro con la siguiente sintaxys: [LugarInicial - LugarFinal => comando]
+--------------------------------------------------------------------------------------------
+-Area de trabajo local: es el ahora de trabajo en la que el usuario modifica y realizar sus cambios a los archivos, la que luego pasara por el stage
+-Area Stage (preparación): es el area donde se preparan todos los archivos para realizar los commits y subirlo al repositorio local.
+-Area repositorio Local: es el trabajo final del repositorio, los archivo modificados se almacenan en el. Este repositorio se podra mover a otras areas de git o podra subir su repositoria al remoto
+-Area repositorio remoto:Repositorio creado por Git hub el cual funcionara de manera parecida a un repositorio local. 
+COMANDOS 
+git commit -a -m "mensaje" -> del area de trabajao al repositorio local
+git add <nombre.extension> -> stage al repositorio local
+git push -u -> repositorio local al remoto 
+git pull -u -> repositorio remoto al local
+git clone <nombre del repositorio remoto> -> machaca tu repositorio local con los archivos del remoto
+git restore <archivo> -> del repositorio local machaca al contenido del area de trabajo inicial
+git restore --stage : saca al archivo a del stage a el area de trabajo volviendo a su estado antes del git add
+
+PREGUNTA A - Explica con tus propias palabras qué es y cómo funciona git. Para ello define y explica la función de los elementos que lo forman: (commit, branch, tree, blob). 
+////////////////////////////////////////////////////////////////////////////////////////
+Git es un software para el cual permite la creación y modificación de repositorios para archivos. Este software nos permite gracias a su apartador en web GitHub, poder trabajar de manera segura he eficaz con repositorios locales y remotos, para asi no interferir y depender de un grupo de trabajo para realizar nuestro trabajo propio.
+-git commit nos permite ejecutar los cambios hechos en el archivo, siendo esto como un punto en el que se trabajara en el repositorio
+-git branch se refiere a las ramas de nuestro repositorio. Esto sirve para manter un trabajo organizado en grupo, haciendo que cada grupo de trabajo pueda trabajar con su rama y no tenga que interferir con la otra.
+-git tree es lo que se conoce como al repositorio entero. es el area de trabajo global que tienen todos los trabajadores, con sus ramas y sus blob 
+-git blob son cada archivo que tiene sus ramas. Son una especie de hojas que tendra cada branch en la que se trabaja
